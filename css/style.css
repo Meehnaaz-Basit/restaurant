@@ -1,0 +1,467 @@
+/*  
+font-family: 'DM Sans', sans-serif;
+font-family: 'Forum', cursive;
+
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --color-yellowish: #e4c590;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #161718;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-yellowish);
+  border-radius: 10px;
+  height: 8%;
+}
+/* /* == common css starts* */
+.common-button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  transition: 0.5s;
+}
+.yellow-button {
+  color: #000000;
+  background-color: var(--color-yellowish);
+  border: 2px solid var(--color-yellowish);
+  transition: 0.5s;
+}
+.yellow-button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.transparent-btn {
+  background-color: transparent;
+  color: var(--color-yellowish);
+  border-color: var(--color-yellowish);
+}
+.transparent-btn:hover {
+  background-color: var(--color-yellowish);
+  color: black;
+  transition: 0.5s;
+}
+.separator-design {
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--color-yellowish);
+  transform: rotate(45deg);
+  display: inline-block;
+  margin: 22px 0 30px;
+}
+.subtitle {
+  color: var(--color-yellowish);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.subtitle::after {
+  content: url("../img/separator.svg");
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+}
+.common-title {
+  font-family: "Forum", cursive;
+  color: white;
+  font-size: 60px;
+  text-transform: capitalize;
+}
+.common-pera {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: 16px;
+}
+/* == common css ends == */
+header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  top: 0px;
+}
+/* top nav */
+.section-top-nav {
+  color: white;
+  padding: 10px 0;
+  background-color: transparent;
+  border-bottom: 2px solid #52525274;
+  border-top: 1px solid #52525274;
+}
+.top {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.top i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.top p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.top .separator-design {
+  margin: 0 40px;
+}
+.top-contact {
+  display: flex;
+  justify-content: end;
+}
+/* top nav ends */
+
+/* nav */
+.nav-section {
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+}
+.cus-navbar {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.cus-navbar ul li {
+  margin: 0px 10px;
+}
+.cus-navbar ul li a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s;
+}
+.cus-navbar ul li a:hover,
+.nav-item .active {
+  color: var(--color-yellowish) !important;
+}
+.cus-navbar ul li a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-yellowish);
+  transition: 0.5s;
+}
+.cus-navbar ul li a::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: 5px;
+  right: 0;
+  background-color: var(--color-yellowish);
+  transition: 0.5s;
+}
+.cus-navbar ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+.cus-navbar ul li a:hover::before {
+  width: 100%;
+  transition: 0.5s;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--color-yellowish);
+}
+.nav-link:focus {
+  color: var(--color-yellowish);
+}
+.cus-nav-icon {
+  background: none;
+}
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 5px;
+  right: 0;
+  background-color: var(--color-yellowish);
+  transition: 0.5s;
+}
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-yellowish);
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+}
+
+.btn-close {
+  height: 3em;
+  width: 180%;
+  background: none;
+}
+.sidebar-items {
+  color: white;
+  text-align: center;
+  margin: 50px 0px;
+}
+.sidebar-items h3 {
+  font-family: "Forum", cursive;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.sidebar-items p {
+  color: #bebebe;
+}
+.sidebar-items span {
+  color: var(--color-yellowish);
+  font-size: 20px;
+}
+/* nav end */
+/* hero */
+.hero-section {
+  position: relative;
+  height: 100vh;
+}
+.hero-section .carousel-item.active img {
+  animation: smoothScale 7s linear forwards;
+}
+
+@keyframes smoothScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.carousel-item {
+  height: 100vh;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+.main-title {
+  font-size: 110px;
+  width: 65%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.pera-header {
+  font-size: 18px;
+  margin: 10px 0 40px;
+}
+.slider-btn {
+  background-color: transparent;
+  color: var(--color-yellowish);
+  border-color: var(--color-yellowish);
+}
+.slider-btn:hover {
+  background-color: var(--color-yellowish);
+  color: black;
+  transition: 0.5s;
+}
+.cus-next,
+.cus-prev {
+  background: none;
+  border: 1px solid var(--color-yellowish);
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+}
+.cus-next i,
+.cus-prev i {
+  color: var(--color-yellowish);
+  font-size: 30px;
+  line-height: 50px;
+  transform: rotate(-45deg);
+}
+.hero-section .book-table-icon {
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  right: 60px;
+}
+.book-table-icon a {
+  background-color: var(--color-yellowish);
+  height: 100px;
+  width: 100px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.book-table-icon a p {
+  color: black;
+  font-size: 10px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-top: 8px;
+  font-weight: 600;
+}
+.book-table-rotate {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 1px solid var(--color-yellowish);
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  right: 60px;
+  animation: rotate360 15s linear infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/* hero end */
+
+/* offer section */
+.offer-section {
+  padding: 100px 0;
+  background-color: #0e0d0c;
+}
+.offer-pera {
+  margin: 0 32%;
+}
+.offer-image {
+  position: relative;
+  z-index: 1;
+  margin: 0 64px;
+  overflow: hidden;
+}
+.back-img-offer {
+  position: relative;
+  z-index: 1;
+}
+.back-img-offer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 400px;
+  background-image: url(../img/img-pattern.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: 0.5s;
+}
+.offer {
+  transition: 0.5s;
+}
+.offer:hover .back-img-offer::before {
+  transition: 0.5s;
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.offer-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  z-index: 100;
+  transition: 0.6s;
+  background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+  transform: skewX(-0.08turn) translateX(-210%);
+}
+.offer:hover .offer-image::after {
+  transform: skewX(0.08turn) translateX(450%);
+  transition: 0.6s;
+}
+.offer-name {
+  margin-top: 50px;
+}
+.offer-name h4 {
+  font-family: "Forum", cursive;
+  font-size: 42px;
+  color: white;
+  text-transform: capitalize;
+}
+.offer-name a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-yellowish);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+.offer-name a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--color-yellowish);
+  transition: 0.5s;
+}
+.offer-name a::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: -3px;
+  right: 0;
+  background-color: var(--color-yellowish);
+  transition: 0.5s;
+}
+.offer-name a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+.offer-name a:hover::before {
+  width: 100%;
+  transition: 0.5s;
+}
+.offer-one {
+  transition: 0.5s;
+}
+.offer-one:hover .offer-image::before {
+  transition: 0.5s;
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+.offer-two {
+  padding-top: 100px;
+}

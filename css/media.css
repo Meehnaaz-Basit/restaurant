@@ -1,0 +1,190 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* common */
+  .common-button {
+    font-size: 2vh;
+    padding: 13px 16px;
+  }
+  .subtitle {
+    font-size: 2vh;
+  }
+  .main-title {
+    font-size: 8vh;
+    width: 90%;
+    margin-top: 26px;
+  }
+  .pera-header {
+    font-size: 2.5vh;
+    margin: 16px 20px 16px;
+  }
+  .common-title {
+    font-size: 44px;
+  }
+  /* common ends */
+  .navbar-nav {
+    margin-top: 50px;
+  }
+  .nav-section {
+    padding: 8px 0;
+  }
+  .hero-section .book-table-icon {
+    bottom: 24px;
+    right: 28px;
+  }
+  .book-table-icon a {
+    height: 62px;
+    width: 62px;
+  }
+  .book-table-icon a img {
+    width: 32px;
+    margin-top: 3px;
+  }
+  .book-table-icon a p {
+    font-size: 9px;
+    letter-spacing: 0px;
+    margin: 0;
+    padding-top: 5px;
+  }
+  .book-table-rotate {
+    width: 62px;
+    height: 62px;
+    bottom: 24px;
+    right: 28px;
+  }
+  .offer-pera {
+    margin: 0;
+  }
+  /*  */
+  .back-img-offer::before {
+    width: 140px;
+    height: 385px;
+  }
+  .offer-one {
+    margin-top: 90px;
+  }
+  .offer-image {
+    margin: 0;
+  }
+  .offer-name h4 {
+    font-size: 32px;
+  }
+  .offer-name a {
+    font-size: 12px;
+  }
+  .offer-three {
+    margin-top: 90px;
+  }
+  /*  */
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* common */
+  .common-button {
+    font-size: 14px;
+    padding: 18px 36px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .main-title {
+    font-size: 75px;
+    width: 90%;
+    margin-top: 32px;
+  }
+  .pera-header {
+    font-size: 17px;
+    margin: 20px 20px 35px;
+  }
+
+  /* common ends */
+  .navbar-nav {
+    margin-top: 50px;
+  }
+  .hero-section .book-table-icon {
+    bottom: 45px;
+    right: 36px;
+  }
+  .book-table-icon a {
+    height: 70px;
+    width: 70px;
+  }
+  .book-table-icon a img {
+    width: 32px;
+    margin-top: 3px;
+  }
+  .book-table-icon a p {
+    font-size: 9px;
+    letter-spacing: 0px;
+    margin: 0;
+    padding-top: 5px;
+  }
+  .book-table-rotate {
+    width: 70px;
+    height: 70px;
+    bottom: 45px;
+    right: 36px;
+  }
+  /*  */
+  .offer-pera {
+    margin: 0;
+  }
+  .offer-one {
+    margin-top: 90px;
+  }
+  /*  */
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* common */
+
+  .subtitle {
+    font-size: 14px;
+  }
+  .main-title {
+    font-size: 76px;
+    width: 78%;
+    margin-top: 30px;
+  }
+  .pera-header {
+    font-size: 18px;
+    margin: 20px 20px 35px;
+  }
+  .cus-next,
+  .cus-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .cus-next i,
+  .cus-prev i {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  /* common ends */
+  .navbar-nav {
+    margin-top: 50px;
+  }
+  /*  */
+  .offer-pera {
+    margin: 0;
+  }
+  .offer-one {
+    margin-top: 90px;
+  }
+  /*  */
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .top .separator-design {
+    margin: 0 20px;
+  }
+  .top p {
+    font-size: 12px;
+  }
+}
+/* Extra Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
